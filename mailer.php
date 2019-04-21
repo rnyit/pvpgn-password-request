@@ -6,7 +6,6 @@ use PHPMailer\PHPMailer\Exception;
 
 if(logs === 1) {
 	echo 'Logs are enabled.' . PHP_EOL;
-	echo 'Location: ' . path . '\var\mailer.log' . PHP_EOL;
 } else {
 	echo 'Logs are disabled.' . PHP_EOL;
 }
