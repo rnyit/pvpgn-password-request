@@ -24,6 +24,10 @@ unset($message);
 
 loop();
 
+function save_logs($message) {
+	file_put_contents(path . '\var\mailer.log', $message, FILE_APPEND);
+}
+
 function loop() {
 	$size = filesize(path . '\var\bnetd.log');
 	while(true) {
@@ -64,10 +68,6 @@ function loop() {
 		fclose($log_file);
 		$size = $current_size;
 	}
-}
-
-function save_logs($message) {
-	file_put_contents(path . '\var\mailer.log', $message, FILE_APPEND);
 }
 
 function decrypt_hash($hash) {
