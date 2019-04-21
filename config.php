@@ -2,10 +2,14 @@
 ///////////////////////////////////////////////////////////////////////
 // Config.                                                           //
 //                                                                   //
-// Set the PvPGN path directory, SMTP information and set the script //
-// to output logs to a file. The log file will be generated and      //
-// located in the var folder on mailer.log file from the PvPGN       //
-// folder.                                                           //
+// Set the PvPGN path directory and SMTP information.                //
+// By default the logs are set to value 1 which means the script     //
+// will generate logs.                                               //
+// To get the valid time and date for the logs your timezone         //
+// location must be set otherwise the time and date won't be         //
+// accurate.                                                         //
+// The logs are generated and stored in var folder on mailer.log     //
+// file.                                                             //
 ///////////////////////////////////////////////////////////////////////
 
 // PvPGN path directory.
@@ -30,7 +34,11 @@ define('from_name', 'PvPGN Private Server');
 define('from_email', 'username@domain.tld');
 
 // Logs.
-// 0 = Logs disabled.
-// 1 = Logs enabled.
+// 1 = Enabled.
+// 0 = Disabled.
 define('logs', 1);
+
+// Timezone.
+// https://www.php.net/manual/en/timezones.php
+date_default_timezone_set('America/Los_Angeles');
 ?>
