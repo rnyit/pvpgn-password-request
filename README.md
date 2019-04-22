@@ -34,8 +34,12 @@ How to implement?
 3 Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
 
 nssm install PvPGN Mailer C:\xampp\php\php.exe
+
 nssm set PvPGN Mailer AppDirectory C:\xampp\php
+
 nssm set PvPGN Mailer AppParameters C:\xampp\www\testing.php
 
+
 To manually verify the data
+
 nssm edit PvPGN Mailer
