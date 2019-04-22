@@ -47,3 +47,5 @@ nssm edit "PvPGN Mailer"
 To remove
 
 nssm remove "PvPGN Mailer" confirm
+
+!desc !delay
