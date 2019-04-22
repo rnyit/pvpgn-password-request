@@ -35,6 +35,8 @@ How to implement?
 
 nssm install "PvPGN Mailer" C:\xampp\php\php.exe
 
+nssm set "PvPGN Mailer" Description PvPGN PHP Mailer.
+
 nssm set "PvPGN Mailer" AppDirectory C:\xampp\php
 
 nssm set "PvPGN Mailer" AppParameters C:\xampp\www\testing.php
@@ -48,4 +50,4 @@ To remove
 
 nssm remove "PvPGN Mailer" confirm
 
-!desc !delay
+!delay
