@@ -43,3 +43,7 @@ nssm set PvPGN Mailer AppParameters C:\xampp\www\testing.php
 To manually verify the data
 
 nssm edit PvPGN Mailer
+
+To remove
+
+nssm remove PvPGN Mailer confirm
