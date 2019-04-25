@@ -17,15 +17,21 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 **Requirments:**
 
 PvPGN logs must be enabled.
+
 SMTP Server.
+
 PHP Windows version.
+
 NSSM(the Non-Sucking Service Manager).
 
 **Tested on:**
 
 OS: Windows 2012 Server Standard.
+
 PvPGN version: 1.8.5.
+
 PHP version: 7.3.4.
+
 NSSM version: 2.24.
 
 **How to implement?**
