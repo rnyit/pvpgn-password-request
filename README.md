@@ -42,8 +42,11 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 **6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path and insert the next following commands:
 
 `nssm install "PvPGN Mailer" C:\d2server\php\php.exe`
+
 `nssm set "PvPGN Mailer" Description PvPGN Password Request.`
+
 `nssm set "PvPGN Mailer" AppDirectory C:\d2server\php\php`
+
 `nssm set "PvPGN Mailer" AppParameters C:\d2server\sendmail\mailer.php`
 
 **7)** Start the service.
