@@ -71,6 +71,8 @@ Remove the service.
 
 `nssm remove "PvPGN Mailer" confirm`
 
+For more information check the [commands list](https://nssm.cc/commands).
+
 ## Tested on:
 
 - OS: Windows 2012 Server Standard.
