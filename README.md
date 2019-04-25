@@ -23,21 +23,24 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 
 **How to implement?**
 
-1) Download + extract this repostory to your PvPGN folder and rename the extracted folder to `sendmail`.
+**1)** Download + extract this repostory to PvPGN folder and rename the extracted folder to `sendmail`.
 
-2) Edit the `config.php` file from the `sendmail` folder and set the required information such as your path to PvPGN folder and a SMTP server.
+**2)** Edit the `config.php` file from the `sendmail` folder and set the required information such as your path to PvPGN folder and a SMTP server.
 
-3) Download [PHP for windows](https://windows.php.net/download/)(non-thread safe version) + extract to your PvPGN folder and rename the extracted folder to PHP.
-OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
+**3)** Download [PHP for windows](https://windows.php.net/download/)(non-thread safe version) + extract to your PvPGN folder and rename the extracted folder to PHP.
+
+**4)** OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
 Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines by deleting the first character`(;)` of each line.
 
-4) Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
+**5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(x32 or x64) folder to PvPGN folder.
+
 **Important!** The path directory of NSSM will **not** work if contains any spaces.
 
 - Good Example: C:\d2server\nssm
-- Bad example: c:\d2 server\nssm
+- Bad example: C:\d2 server\nssm
 
-install
+**6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path.
+
 nssm install "PvPGN Mailer" C:\Users\Administrator\Desktop\php\php.exe
 nssm set "PvPGN Mailer" Description PvPGN Password Request.
 nssm set "PvPGN Mailer" AppDirectory C:\Users\Administrator\Desktop\php
