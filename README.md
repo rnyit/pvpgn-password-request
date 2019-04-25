@@ -55,13 +55,13 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 
 ## Done!
 
-The script will now run in the background as a Windows service and it will start automatically every time the machine is rebooted.
+The script will now run in the background as a Windows service and it will start automatically every time the machine is rebooted. Do **not** delete the nssm folder because is necessary to run the script.
 
 ## NSSM vs SC(Service Control)
 
 By default you can add a service through Windows Service Control, however a PHP script will not run properly because `php.exe` is not meant to be a service. In the other hand NSSM, as the name says is a "Non-Sucking Service Manager" that can make the Windows to believe that `php.exe` is a service.
 
-## NSSM extra commands
+## NSSM extra commands:
 
 To manually verify the data.
 
@@ -72,6 +72,14 @@ Remove the service.
 `nssm remove "PvPGN Mailer" confirm`
 
 For more information check the [commands list](https://nssm.cc/commands).
+
+## Donations:
+
+Our purpose in life is to make everybody around happy. Donations mean that somebody on this earth finds my work useful and that makes me as developer happy.
+
+PayPal: [https://www.paypal.me/rnyweb](https://www.paypal.me/rnyweb)
+
+Bitcoin: [1F2nuGUUxxqgnH22aFi6hzWVgcZxCgyuwM](https://www.blockchain.com/btc/address/1F2nuGUUxxqgnH22aFi6hzWVgcZxCgyuwM)
 
 ## Tested on:
 
