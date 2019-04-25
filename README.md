@@ -21,7 +21,7 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 - PHP Windows version.
 - NSSM(the Non-Sucking Service Manager).
 
-## How to implement?
+## How to install and configure?
 
 **1)** Download + extract this repostory to PvPGN folder and rename the extracted folder to `sendmail`.
 
@@ -87,5 +87,3 @@ Bitcoin: [1F2nuGUUxxqgnH22aFi6hzWVgcZxCgyuwM](https://www.blockchain.com/btc/add
 - PvPGN version: 1.8.5.
 - PHP version: 7.3.4.
 - NSSM version: 2.24.
-
-how to add delay?
