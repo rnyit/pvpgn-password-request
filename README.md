@@ -32,29 +32,41 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 **4)** OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
 Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines by deleting the first character`(;)` of each line.
 
-**5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(x32 or x64) folder to PvPGN folder.
+**5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(`win32` or `win64`) folder to PvPGN folder.
 
 **Important!** The path directory of NSSM will **not** work if contains any spaces.
 
-- Good Example: C:\d2server\nssm
-- Bad example: C:\d2 server\nssm
+- Good Example: `C:\d2server\nssm`
+- Bad example: `C:\d2 server\nssm`
 
-**6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path.
+**6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path and insert the next following commands:
 
-nssm install "PvPGN Mailer" C:\Users\Administrator\Desktop\php\php.exe
-nssm set "PvPGN Mailer" Description PvPGN Password Request.
-nssm set "PvPGN Mailer" AppDirectory C:\Users\Administrator\Desktop\php
-nssm set "PvPGN Mailer" AppParameters C:\Users\Administrator\Desktop\sendmail\mailer.php
+`nssm install "PvPGN Mailer" C:\d2server\php\php.exe`
+`nssm set "PvPGN Mailer" Description PvPGN Password Request.`
+`nssm set "PvPGN Mailer" AppDirectory C:\d2server\php\php`
+`nssm set "PvPGN Mailer" AppParameters C:\d2server\sendmail\mailer.php`
 
+**7)** Start the service.
 
-To manually verify the data
-nssm edit "PvPGN Mailer"
+`nssm start "PvPGN Mailer"`
 
-To remove
-nssm remove "PvPGN Mailer" confirm
+**Done!**
 
-how to add delay?
+The script will now run in the background as a Windows service and it will start automatically every time the machine is rebooted.
 
+**NSSM vs SC(Service Control)**
+
+By default you can add a service through Windows Service Control, however a PHP script will not run properly because `php.exe` is not meant to be a service. In the other hand NSSM, as the name says is a "Non-Sucking Service Manager" that can make the Windows to believe that `php.exe` is a service.
+
+**NSSM extra commands**
+
+To manually verify the data.
+
+`nssm edit "PvPGN Mailer"`
+
+Remove the service.
+
+`nssm remove "PvPGN Mailer" confirm`
 
 **Tested on:**
 
@@ -62,3 +74,5 @@ how to add delay?
 - PvPGN version: 1.8.5.
 - PHP version: 7.3.4.
 - NSSM version: 2.24.
+
+how to add delay?
