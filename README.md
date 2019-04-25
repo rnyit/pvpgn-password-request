@@ -23,15 +23,14 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 
 **How to implement?**
 
-1) Download + extract this repostory to your PvPGN folder and rename the extracted folder to sendmail.
+1) Download + extract this repostory to your PvPGN folder and rename the extracted folder to `sendmail`.
 
-2) Edit the config.php file from the sendmail folder and set the required information such as your path to PvPGN folder and a SMTP server.
+2) Edit the `config.php` file from the `sendmail` folder and set the required information such as your path to PvPGN folder and a SMTP server.
 
 3) Download [PHP for windows](https://windows.php.net/download/)(non-thread safe version) + extract to your PvPGN folder and rename the extracted folder to PHP. OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
-Search for 2 stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines.
+Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines by deleting the first character`(;)` of each line.
 
-
-3) Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
+4) Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
 **Important!** The path directory of NSSM will **not** work if contains any spaces.
 
 - Good Example: C:\d2server\nssm
