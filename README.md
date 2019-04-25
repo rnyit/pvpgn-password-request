@@ -30,7 +30,7 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 
 **How to implement?**
 
-**Important!** The path directory of NSSM will NOT work if contains any spaces.
+**Important!** The path directory of NSSM will **not** work if contains any spaces.
 
 - Good Example: C:\d2server\nssm
 - Bad example: c:\d2 server\nssm
