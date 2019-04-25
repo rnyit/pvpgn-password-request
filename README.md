@@ -21,23 +21,18 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 - PHP Windows version.
 - NSSM(the Non-Sucking Service Manager).
 
-**Tested on:**
-
-- OS: Windows 2012 Server Standard.
-- PvPGN version: 1.8.5.
-- PHP version: 7.3.4.
-- NSSM version: 2.24.
-
 **How to implement?**
 
+1) Download and extract this repostory to your PvPGN folder and rename the extracted folder to sendmail.
+2) Edit the config.php file from the sendmail folder and set the required information such as your path to PvPGN folder and a SMTP server.
+3) Download [PHP for windows](https://windows.php.net/download/)(non-thread safe version).
+
+
+3) Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
 **Important!** The path directory of NSSM will **not** work if contains any spaces.
 
 - Good Example: C:\d2server\nssm
 - Bad example: c:\d2 server\nssm
-
-1) Download and extract this repostory to your PvPGN folder.
-2) Edit config.php file and set the required information such as your path to PvPGN folder and a SMTP server.
-3) Add the script to run as a windows service with NSSM(the Non-Sucking Service Manager).
 
 install
 nssm install "PvPGN Mailer" C:\Users\Administrator\Desktop\php\php.exe
@@ -53,3 +48,11 @@ To remove
 nssm remove "PvPGN Mailer" confirm
 
 how to add delay?
+
+
+**Tested on:**
+
+- OS: Windows 2012 Server Standard.
+- PvPGN version: 1.8.5.
+- PHP version: 7.3.4.
+- NSSM version: 2.24.
