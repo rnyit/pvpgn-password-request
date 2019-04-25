@@ -23,20 +23,17 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 
 **Tested on:**
 
-OS: Windows 2012 Server Standard.
-
-PvPGN version: 1.8.5.
-
-PHP version: 7.3.4.
-
-NSSM version: 2.24.
+- OS: Windows 2012 Server Standard.
+- PvPGN version: 1.8.5.
+- PHP version: 7.3.4.
+- NSSM version: 2.24.
 
 **How to implement?**
 
 **Important!** The path directory of NSSM will NOT work if contains any spaces.
 
-Good Example: C:\d2server\nssm
-Bad example: c:\d2 server\nssm
+- Good Example: C:\d2server\nssm
+- Bad example: c:\d2 server\nssm
 
 1) Download and extract this repostory to your PvPGN folder.
 2) Edit config.php file and set the required information such as your path to PvPGN folder and a SMTP server.
