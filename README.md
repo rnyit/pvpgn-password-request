@@ -34,20 +34,15 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 
 **5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(`win32` or `win64`) folder to PvPGN folder.
 
-**Important!** The path directory of NSSM will **not** work if contains any spaces.
-
-- Good Example: `C:\d2server\nssm`
-- Bad example: `C:\d2 server\nssm`
-
 **6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path and insert the next following commands:
 
-`nssm install "PvPGN Mailer" C:\d2server\php\php.exe`
+`nssm install "PvPGN Mailer" "C:\PvPGN server\php\php.exe"`
 
 `nssm set "PvPGN Mailer" Description PvPGN Password Request.`
 
-`nssm set "PvPGN Mailer" AppDirectory C:\d2server\php\php`
+`nssm set "PvPGN Mailer" AppDirectory "C:\PvPGN server\php"`
 
-`nssm set "PvPGN Mailer" AppParameters C:\d2server\sendmail\mailer.php`
+`nssm set "PvPGN Mailer" AppParameters "C:\PvPGN server\sendmail\mailer.php"`
 
 **7)** Start the service.
 
