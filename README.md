@@ -8,7 +8,7 @@ It currently supports most features of all Battle.net classic clients (Diablo, D
 
 ## What is PvPGN password request?
 
-PvPGN password request is a script written in PHP with a [PHP Mailer](https://github.com/PHPMailer/PHPMailer) built-in that allow any PvPGN client to recover the password through a Battle.net private server that is running on PvPGN. Officially, PvPGN has no built-in function to rocover a lost password and this script can be used to have that function working.
+PvPGN password request is a script written in [PHP](https://www.php.net) with a [PHP Mailer](https://github.com/PHPMailer/PHPMailer) built-in that allow any PvPGN client to recover the password through a Battle.net private server that is running on PvPGN. Officially, PvPGN has no built-in function to rocover a lost password and this script can be used to have that function working.
 
 ## How is working?
 
@@ -27,7 +27,7 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 
 **2)** Edit the `config.php` file from the `sendmail` folder and set the required information such as your path to PvPGN folder and a SMTP server.
 
-**3)** Download [PHP for windows](https://windows.php.net/download/)(non-thread safe version) + extract to your PvPGN folder and rename the extracted folder to PHP.
+**3)** Download [PHP for windows](https://windows.php.net/download)(non-thread safe version) + extract to your PvPGN folder and rename the extracted folder to PHP.
 
 **4)** OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
 Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines by deleting the first character`(;)` of each line.
