@@ -38,7 +38,7 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 
 `nssm install "PvPGN Mailer" "C:\PvPGN server\php\php.exe"`
 
-`nssm set "PvPGN Mailer" Description PvPGN Password Request.`
+`nssm set "PvPGN Mailer" Description "PvPGN Password Request."`
 
 `nssm set "PvPGN Mailer" AppDirectory "C:\PvPGN server\php"`
 
