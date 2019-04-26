@@ -40,9 +40,9 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 
 `nssm set "PvPGN Mailer" Description "PvPGN Password Request."`
 
-**Important** If path to PvPGN folder contains spaces any `set` command used needs escape for quotes. For more information see the [usage](https://nssm.cc/usage) on section **Quoting issues**.
+**Important!** If path to PvPGN path folder contains any spaces, **must** be quoted + quote the quotation marks. For more information see the [usage](https://nssm.cc/usage) on section **Quoting issues**.
 
-`nssm set "PvPGN Mailer" AppParameters "\"C:\Users\Administrator\Desktop\Diablo II Server\sendmail\mailer.php\""`
+`nssm set "PvPGN Mailer" AppParameters """C:\Users\Administrator\Desktop\Diablo II Server\sendmail\mailer.php"""`
 
 **7)** Start the service.
 
