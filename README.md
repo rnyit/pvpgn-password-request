@@ -32,7 +32,7 @@ PvPGN does generate and output logs if a user is requesting a new password and i
 **4)** OpenSSL **must** be enabled for the PHP Mailer and by default a portable version of PHP does **not** contain a php.ini file with all the extensions enabled. To do this rename the `php.ini-development` file to `php.ini` then edit it.
 Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncomment those lines by deleting the first character`(;)` of each line.
 
-**5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(`win32` or `win64`) folder to PvPGN folder.
+**5)** Download [NSSM](https://nssm.cc/download)(the Non-Sucking Service Manager) + extract, open the extracted folder and copy your architecture(`win32` or `win64`) folder to PvPGN folder. Rename the architecture folder to `nssm`.
 
 **6)** Open cmd.exe under Administrator privilage and change the directory to NSSM path and insert the next following commands:
 
