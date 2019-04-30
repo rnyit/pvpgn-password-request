@@ -49,11 +49,11 @@ function loop() {
 					save_logs($message);
 				}
 				unset($message);
-				$search = 'BNET\\\acct\\\passhash1';
+				$search_string = 'BNET\\\acct\\\passhash1';
 				$lines = file(path . '\var\users\\' . $username);
 				$line_number = false;
 				while(list($key, $line) = each($lines) and !$line_number) {
-					if(strpos($line, $search) !== false) {
+					if(strpos($line, $search_string) !== false) {
 						$line_number = $key + 1;
 					}
 				}
