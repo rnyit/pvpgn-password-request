@@ -57,8 +57,7 @@ function loop() {
 						$line_number = $key + 1;
 					}
 				}
-				$hash_line = trim($lines[$line_number - 1]);
-				$split_hash = explode('=', $hash_line);
+				$split_hash = explode('=', trim($lines[$line_number - 1]));
 				$hash = substr($split_hash[1], 1, -1);
 				$password = decrypt_hash($hash);
 				send_mail($username, $email, $password);
