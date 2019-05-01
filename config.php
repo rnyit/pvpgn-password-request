@@ -13,7 +13,7 @@
 ///////////////////////////////////////////////////////////////////////
 
 // PvPGN path directory.
-define('path', 'D:\Diablo II Server');
+define('path', 'D:\PvPGN Server');
 
 // SMTP server hostname.
 define('host', 'smtp.domain.tld');
