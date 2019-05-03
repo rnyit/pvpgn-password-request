@@ -40,7 +40,7 @@ Search the next stings `extension_dir = "ext"`, `extension=openssl` and uncommen
 
 `nssm set "PvPGN Mailer" Description "PvPGN Password Request."`
 
-**Warning!** If path to PvPGN path folder contains any spaces, **must** be quoted + quote the quotation marks. For more information see the [usage](https://nssm.cc/usage) on section **Quoting issues**.
+**Warning!** If path to PvPGN path folder contains any spaces, it must be quoted + quote the quotation marks. For more information see the [usage](https://nssm.cc/usage) on section **Quoting issues**.
 
 `nssm set "PvPGN Mailer" AppParameters """C:\Users\Administrator\Desktop\PvPGN Server\sendmail\mailer.php"""`
 
