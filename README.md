@@ -21,6 +21,12 @@ PvPGN does generate and output logs if a user is requesting the password if the 
 - PHP Windows version.
 - NSSM(the Non-Sucking Service Manager).
 
+## How to enable PvPGN logs?
+
+Edit the `bnetd.conf` file from `PvPGN/conf` folder and search for the string `loglevels`.
+
+`loglevels = fatal,error,warn,info`
+
 ## How to install and configure?
 
 **1)** Download + extract this repostory to PvPGN folder and rename the extracted folder to `sendmail`.
