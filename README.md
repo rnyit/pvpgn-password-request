@@ -1,5 +1,5 @@
 # pvpgn-password-request
-PvPGN password request script. [PHP]
+PvPGN Password Request Script.
 
 ## What is PvPGN?
 
@@ -25,7 +25,7 @@ PvPGN does generate and output logs if a user is requesting the password if the 
 
 Edit the `bnetd.conf` file from `PvPGN/conf` folder and search for the string `loglevels`.
 
-`loglevels = fatal,error,warn,info`
+`loglevels = error,info`
 
 ## How to install and configure?
 
