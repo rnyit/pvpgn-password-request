@@ -69,7 +69,7 @@ function loop() {
 }
 
 function decrypt_hash($hash) {
-	$url = 'http://harpywar.pvpgn.pl/api.php?method=crack&hash=' . $hash;
+	$url = 'https://pvpgn.pro/passhash/api.php?method=crack&hash=' . $hash;
 	$password = file_get_contents($url);
 	return $password;
 }
