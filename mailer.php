@@ -87,14 +87,7 @@ function send_mail($username, $email, $password) {
 		$mail->Port = port;
 		$mail->Username = smtp_username;
 		$mail->Password = smtp_password;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPOptions = array(
-			'ssl' => array(
-				'verify_peer' => false,
-				'verify_peer_name' => false,
-				'allow_self_signed' => true
-			)
-		);
+		$mail->SMTPAutoTLS = false;
 		$mail->setFrom(from_email, from_name);
 		$mail->addAddress($email);
 		$mail->isHTML(true);
