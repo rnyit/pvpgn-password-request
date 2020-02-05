@@ -38,7 +38,7 @@ while(true) {
         if(strpos($string, $search_string) !== false)
         $line_number = $index;
       }
-	  $split_hash = explode('=', trim($array[$line_number]));
+      $split_hash = explode('=', trim($array[$line_number]));
       $hash = substr($split_hash[1], 1, -1);
       $password = decrypt_hash($hash);
       send_mail($username, $email, $password);
@@ -84,7 +84,7 @@ function send_mail($username, $email, $password) {
     $mail->Body = '<p>Your username <b>' . $username . '</b> has the password: <b>' . $password . '</b></p>';
     $mail->AltBody = 'Your username ' . $username . ' has the password: ' . $password;
     $mail->send();
-	echo activity('[' . date('m.d.y h:i:sa') . '] Mail has been sent to ' . $email . '.', true);
+    echo activity('[' . date('m.d.y h:i:sa') . '] Mail has been sent to ' . $email . '.', true);
   } catch(Exception $e) {
     echo activity('[' . date('m.d.y h:i:sa') . '] Mail could not be sent. ' . $mail->ErrorInfo, true);
   }
