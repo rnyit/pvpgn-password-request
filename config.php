@@ -1,44 +1,37 @@
 <?php
-///////////////////////////////////////////////////////////////////////
-// Config.                                                           //
-//                                                                   //
-// Set the PvPGN path directory and SMTP information.                //
-// By default the logs are set to value 1 which means the script     //
-// will generate logs.                                               //
-// To get the valid time and date for the logs your timezone         //
-// location must be set otherwise the time and date won't be         //
-// accurate.                                                         //
-// The logs are generated and stored in var folder on mailer.log     //
-// file.                                                             //
-///////////////////////////////////////////////////////////////////////
+// Debugging
+// Use value 0 to hide all PHP errors or value -1 to show them all.
+define('errors', 0);
 
-// PvPGN path directory.
-define('path', 'D:\PvPGN Server');
+// Platform
+// windows or unix.
+//define('platform', 'windows');
 
-// SMTP server hostname.
-define('host', 'smtp.domain.tld');
+// PvPGN location path
+define('path', 'C:\PvPGN');
 
-// SMTP port.
-define('port', 587);
-
-// SMTP username.
-define('smtp_username', 'username@domain.tld');
-
-// SMTP password.
-define('smtp_password', 'SecretPassword123');
-
-// From name.
-define('from_name', 'PvPGN Private Server');
-
-// From email.
-define('from_email', 'username@domain.tld');
-
-// Logs.
-// 1 = Enabled.
-// 0 = Disabled.
+// Save logs
+// Use value 0 to not save the logs and 1 to do it.
 define('logs', 1);
 
-// Timezone.
+// SMTP server IP address or hostname
+define('smtp_server', 'smtp.server.com');
+
+// SMTP port
+define('smtp_port', 25);
+
+// SMTP username
+define('smtp_username', 'username@server.com');
+
+// SMTP password
+define('smtp_password', 'Password!@#');
+
+// Mail name
+define('mail_name', 'PvPGN Private Server');
+
+// Mail from address
+define('mail_from', 'username@server.com');
+
+// Timezone
 // https://www.php.net/manual/en/timezones.php
 date_default_timezone_set('America/Los_Angeles');
-?>
