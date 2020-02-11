@@ -8,7 +8,7 @@ It currently supports most features of all Battle.net classic clients (Diablo, D
 
 ## What is PvPGN password request?
 
-PvPGN password request is a script written in [PHP](https://www.php.net) with a [PHP Mailer](https://github.com/PHPMailer/PHPMailer) built-in that allow any PvPGN client to recover the password through a Battle.net private server that is running on PvPGN. Officially, PvPGN has no built-in function to rocover a lost password and this script can be used to have that function working.
+PvPGN password request is a script written in [PHP](https://www.php.net) with a [PHP Mailer](https://github.com/PHPMailer/PHPMailer) built-in that allow any PvPGN client to recover the password through a Battle.net private server that is running on PvPGN. Officially, PvPGN has no built-in function to rocover a lost password and this script can be used to have that function working. The script does not reset the password what it actually does is requesting the curent password of an account.
 
 ## How is working?
 
