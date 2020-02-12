@@ -3,10 +3,6 @@
 // Use value 0 to hide all PHP errors or value -1 to show them all.
 define('errors', 0);
 
-// Platform
-// windows or unix.
-//define('platform', 'windows');
-
 // PvPGN location path
 define('path', 'C:\PvPGN');
 
