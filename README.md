@@ -29,7 +29,7 @@ Edit the `bnetd.conf` file from `PvPGN/conf` folder and search for the string `l
 
 ## How to install and configure?
 
-**1)** Download + extract this repostory to PvPGN folder and rename the extracted folder to `sendmail`.
+**1)** Download + extract [this](https://github.com/rnyweb/pvpgn-password-request/archive/master.zip) repostory to PvPGN folder and rename the extracted folder to `sendmail`.
 
 **2)** Edit the `config.php` file from the `sendmail` folder and set the required information such as your path to PvPGN folder and a SMTP server.
 
