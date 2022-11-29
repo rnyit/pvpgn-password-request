@@ -70,6 +70,13 @@ For more information check the [commands list](https://nssm.cc/commands).
 
 By default you can add a service through Windows Service Control, however a PHP script will not run properly because `php.exe` is not meant to be a service. In the other hand NSSM, as the name says is a "Non-Sucking Service Manager" that can make the Windows to believe that `php.exe` is a service.
 
+## Tested on
+
+- OS: Windows 2012 Server Standard.
+- PvPGN version: 1.8.5.
+- PHP version: 7.3.4.
+- NSSM version: 2.24.
+
 ## Donations
 
 Our purpose in life is to make everybody around happy. Donations mean that somebody on this earth finds my work useful and that makes me as developer happy.
@@ -77,10 +84,3 @@ Our purpose in life is to make everybody around happy. Donations mean that someb
 PayPal: [https://www.paypal.me/rnyit](https://www.paypal.me/rnyit)
 
 Bitcoin Address: [bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy](https://www.blockchain.com/btc/address/bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy)
-
-## Tested on
-
-- OS: Windows 2012 Server Standard.
-- PvPGN version: 1.8.5.
-- PHP version: 7.3.4.
-- NSSM version: 2.24.
