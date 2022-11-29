@@ -76,7 +76,7 @@ Our purpose in life is to make everybody around happy. Donations mean that someb
 
 PayPal: [https://www.paypal.me/rnyit](https://www.paypal.me/rnyit)
 
-Bitcoin: [bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy](https://www.blockchain.com/btc/address/bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy)
+Bitcoin Address: [bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy](https://www.blockchain.com/btc/address/bc1qpkfmlrwfk4mrfjfgds3vcrp0djj92d9qjzq5zy)
 
 ## Tested on:
 
