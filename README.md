@@ -1,11 +1,6 @@
 # pvpgn-password-request
 PvPGN Password Request Script.
 
-## What is PvPGN
-
-[PvPGN](https://pvpgn.pro)(Player vs Player Gaming Network) is a free and open source software project offering emulation of various gaming network servers. It is published under the GPL and based upon bnetd.
-It currently supports most features of all Battle.net classic clients (Diablo, Diablo II, Diablo II: Lord of Destruction, StarCraft, StarCraft: Brood War, Warcraft II: Battle.net Edition, Warcraft III: Reign of Chaos, Warcraft III: The Frozen Throne). It also offers basic support for Westwood Online clients (Command & Conquer: Tiberian Sun, Command & Conquer: Red Alert 2, Command & Conquer: Yuri's Revenge).
-
 ## What is this
 
 PvPGN password request is a script written in [PHP](https://www.php.net) which has a [PHP Mailer](https://github.com/PHPMailer/PHPMailer) built-in that allow any user to recover the password through a Battle.net private server that is running under PvPGN. Officially PvPGN has no built-in function to rocover a lost password and this script make that function working. The script does **not** reset the password instead is sending the **current** password of the account.
@@ -27,7 +22,7 @@ Edit the `bnetd.conf` file from `PvPGN/conf` folder and search for the string `l
 
 `loglevels = info`
 
-## How to install and configure
+## Setup
 
 **1)** Download + extract [this](https://github.com/rnyweb/pvpgn-password-request/archive/master.zip) repostory to PvPGN folder and rename the extracted folder to `sendmail`.
 
