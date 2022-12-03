@@ -1,5 +1,5 @@
 # pvpgn-password-request
-PvPGN Password Request Script.
+PvPGN Password Request.
 
 ## What is this
 
